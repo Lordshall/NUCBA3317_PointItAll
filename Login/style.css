@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&family=Open+Sans:ital,wght@1,400;1,500;1,600;1,700;1,800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Open Sans", Caveat;
+}
+
+:root {
+  /* bg colors */
+  --background: #141414;
+  --primary: #845543;
+  --secondary: #be7e5a;
+  --Btn: #442523;
+  /* Text */
+  --text1: #ded2d1;
+  --text2: #232020;
+}
+
+body {
+  font-family: "Open Sans";
+  background-color: #e5e5f7;
+  background-image: radial-gradient(#726054 0.5px, transparent 0.5px),
+    radial-gradient(#726054 0.5px, #e5e5f7 0.5px);
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
+  display: flex;
+  min-height: 100vh;
+  text-align: center;
+  flex-direction: column;
+}
+
+/* background: var(--primary);
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width: 100%;
+color: white; */
+
+#Contacto {
+  background-color: var(--primary);
+  margin: auto;
+  width: 90%;
+  max-width: 400px;
+  padding: 20px 10px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px -5px rgb(0, 0, 0 / 30%);
+  /* color: #fff;
+  align-items: center;
+  justify-content: center; */
+}
+
+.Form-top {
+  font-size: 1.5rem;
+  margin-bottom: 0.5em;
+}
+
+.Icon {
+  width: 150px;
+  height: 150px;
+}
+
+.Form-bottom {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #fff;
+}
+
+#form-input {
+  width: 100%;
+  background: #cacfca;
+  color: var(--text2);
+  padding: 5px 5px;
+  font-size: 16px;
+  border-radius: 8px;
+  font-family: "kalam", Caveat;
+  cursor: pointer;
+}
+
+.form-label {
+  color: var(--text2);
+  font-weight: 800;
+  font-size: 18px;
+  text-align: start;
+}
+
+.btn {
+  background: var(--Btn);
+  color: var(--text1);
+  font-family: "Open Sans", Caveat;
+  font-weight: 300;
+  font-size: 24px;
+  padding: 5px 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.Form-bottom a,
+.terminos a {
+  font-family: "Open Sans", Caveat;
+  color: var(--text2);
+  font-weight: 300;
+}

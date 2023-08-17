@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario_de_Contacto</title>
+    <link rel="stylesheet" href="Style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <form id="Contacto">
+      <div class="Form-top">
+        <img src="./Assets/login.png" class="Icon" alt="Icon" />
+        <h1>Formulario de Contacto</h1>
+      </div>
+
+      <div class="Form-bottom">
+        <label for="name" class="form-label">Nombre:</label>
+        <input
+          type="text"
+          name="nombre"
+          id="form-input"
+          placeholder="Ingrese su Nombre"
+        />
+        <label for="name" class="form-label">Apellido:</label>
+        <input
+          type="text"
+          name="apellido"
+          id="form-input"
+          placeholder="Ingrese su Nombre"
+        />
+        <label for="email" class="form-label">Correo:</label>
+        <input
+          type="email"
+          name="correo"
+          id="form-input"
+          placeholder="johndoe@mail.com"
+        />
+        <label for="tel" class="form-label">Telefono:</label>
+        <input
+          type="tel"
+          name="telefono"
+          id="form-input"
+          placeholder="12-3456-7890"
+        />
+        <label for="text" class="form-label">Servicio Fotografico:</label>
+        <select name="servicio" id="servicio">
+          <option value="seleccione">Sesión en Estudio Fotografico</option>
+          <option value="Estudio">Sesión en Estudio Fotografico</option>
+          <option value="Eventos">Cobertura de Evento</option>
+          <option value="Outside/Inside">
+            Sesión Natural (Outside/Inside)
+          </option>
+          <option value="Marketing">Sesión p/ Marketing</option>
+          <option selected="selected" value=""></option>
+        </select>
+        <label for="Descripcion" class="form-label"
+          >Descripcion del Servicio:</label
+        >
+        <textarea
+          name="Descripcion"
+          id="Descripcion"
+          maxlength="250"
+          ols="30"
+          rows="15"
+        ></textarea>
+        <div class="terminos">
+          <input type="checkbox" id="terminos" />
+          <label for="terminos" class="form-label"
+            >Acepto los terminos y condiciones <a href="#">Ver</a></label
+          >
+        </div>
+        <button class="btn">Ingresar</button>
+        <a href="../index.html" target="_blank" class="btn">
+          <button class="btn">Volver</button></a
+        >
+        <p><a href="#">¿Contraseña Olvidada?</a></p>
+      </div>
+    </form>
+  </body>
+</html>

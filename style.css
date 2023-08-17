@@ -1,0 +1,357 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&family=Open+Sans:ital,wght@1,400;1,500;1,600;1,700;1,800&display=swap");
+
+:root {
+  /* bg colors */
+  --background: #141414;
+  --primary: #845543;
+  --secondary: #be7e5a;
+  --Btn: #442523;
+  /* Text */
+  --text1: #ded2d1;
+  --text2: #232020;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Open Sans", "Caveat";
+}
+
+body {
+  background: var(--background);
+}
+
+header {
+  background: var(--secondary);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+  height: 100px;
+  position: frelative;
+  width: 100%;
+}
+
+.logo {
+  height: 400px;
+  width: 400px;
+}
+
+.login-icon {
+  height: 80px;
+  width: 80px;
+  padding: 5px 5px;
+  cursor: pointer;
+}
+
+.navbar,
+.navbar-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar {
+  gap: 3rem;
+}
+
+.navbar-list {
+  gap: 6rem;
+}
+
+.navbar-list a {
+  color: var(--text1);
+  font-size: 48px;
+}
+
+/* .navbar-list li:first-child > a {
+  font-weight: 700;
+  color: var(--text2);
+} */
+
+.navbar-list .active {
+  font-weight: 700;
+  color: var(--text2);
+}
+
+/* Hero */
+
+main {
+  background: var(--background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: white;
+}
+
+#Home {
+  padding: 30px 0;
+  height: 100vh;
+  gap: 10px;
+  max-width: 1200px;
+  align-content: center;
+  justify-content: center;
+  display: flex;
+  background: var(--background);
+}
+
+.item h1 {
+  text-align: center;
+  padding-top: 60px;
+  color: var(--text2);
+  font-weight: 800;
+  font-size: 40px;
+  min-width: 300px;
+}
+
+.item p {
+  text-align: end;
+  padding-top: 60px;
+  color: var(--text2);
+  line-height: 1.6em;
+  font-size: 24px;
+  min-width: 200px;
+}
+.Container {
+  border: 2px dotted #fff;
+  height: 100vh;
+  padding: 30px 10px;
+  display: grid;
+  grid-template-columns: 300px 200px 500px;
+  grid-auto-rows: 1fr;
+  /* place-content: center; */
+  justify-content: center;
+  gap: 10px;
+  max-width: 1200px;
+  align-content: center;
+  background-color: var(--primary);
+}
+
+.item {
+  border-radius: 1rem;
+  background-color: 0 0 15px p rgba(0, 0, 0, 0.5);
+}
+
+.item:nth-child(1) {
+  background: var(--text1);
+  font-family: "caveat";
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+}
+
+.item:nth-child(2) {
+  background: url(./Fotos/Item3.png) no-repeat center/ cover;
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 4;
+}
+
+.item:nth-child(3) {
+  background: url(./Fotos/Item4.jpg) no-repeat center/ cover;
+  grid-column: 1 / span 2;
+  grid-row: 3 / span 2;
+}
+
+/* Galeria */
+
+#Galeria {
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  gap: 60px;
+  background: var(--background);
+  border-radius: 10px;
+}
+
+.Galeria-cards-container {
+  display: flex;
+  gap: 40px;
+  justify-content: space-around;
+  background-color: var(--primary);
+  padding: 30px 10px;
+}
+
+#Galeria p {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--text1);
+}
+
+.Galeria-Studio {
+  background: url(./Fotos/Studio.jpg) no-repeat center/ cover;
+  width: 500px;
+  height: 500px;
+  border-radius: 20px;
+  box-shadow: 5px 8px 12px #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Galeria-Nature {
+  background: url(./Fotos/Nature.jpg) no-repeat center/ cover;
+  width: 500px;
+  height: 500px;
+  border-radius: 20px;
+  box-shadow: 5px 8px 12px #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Galeria-Studio p,
+.Galeria-Nature p {
+  padding-top: 100px;
+  font-family: "caveat";
+  font-size: 64px;
+  font-weight: 800;
+  color: black;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+}
+
+.Galeria-Nature:hover,
+.Galeria-Studio:hover {
+  transform: scale(1.1);
+  box-shadow: 13px 15px 17px black;
+  /* align-items: center;
+  justify-content: center; */
+}
+
+/* Estudio */
+
+#Estudio {
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1080px;
+  gap: 30px;
+  background: var(--background);
+}
+
+.Estudio-container {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: space-around;
+  background: var(--primary);
+  padding: 30px 10px;
+}
+
+#Estudio h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text1);
+}
+
+.Estudio-img {
+  padding: 0 10px;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+}
+
+.Studio {
+  padding: 5px 0;
+  width: 500px;
+  height: 400px;
+  border-radius: 40px;
+}
+
+.Estudio-info h3 {
+  font-size: 48px;
+  font-weight: 500;
+  width: 80%;
+  min-width: 300px;
+}
+
+.Estudio-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 40px;
+  width: 60%;
+}
+
+.Estudio-info p {
+  line-height: 1.2em;
+  font-size: 24px;
+  width: 80%;
+  color: var(--text2);
+}
+
+.Estudio-info span {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.Estudio-info a {
+  color: var(--text1);
+  background: var(--text2);
+  padding: 8px 14px;
+  border-radius: 10px;
+  background-color: var(--Btn);
+}
+
+/* FOOTER */
+
+footer {
+  background: var(--secondary);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 0;
+  gap: 40px;
+}
+
+#footer-items {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  gap: 300px;
+}
+
+.redes {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.red-icon {
+  display: flex;
+  width: 48px;
+  height: 48px;
+}
+
+.footer-nav,
+.footer-links {
+  line-height: 2.2em;
+  font-size: 24px;
+}
+
+.redes p,
+.redes span,
+footer a,
+footer p {
+  color: var(--text2);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+footer span {
+  font-weight: 700;
+}
