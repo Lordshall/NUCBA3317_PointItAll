@@ -5,16 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PointitAllStudio</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./Fotos/Favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./Fotos/Favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./Fotos/Favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./Fotos/Favicon/site.webmanifest" />
   </head>
   <body>
     <header>
       <nav class="navbar">
+        <img src="./Fotos/Logo.png" alt="Logo" class="logo" />
+
+        <!-- *** Toggle para el responsive del nav*** -->
+        <label for="menu-toggle" class="menu-label"
+          ><img src="./Fotos/menu.png" alt="menu-icon"
+        /></label>
+        <input type="checkbox" id="menu-toggle" />
+
         <ul class="navbar-list">
           <li><a href="#Home" class="active">Home</a></li>
           <li><a href="#Galeria">Galeria</a></li>
-        </ul>
-        <img src="./Assets/Logo.png" alt="Logo" class="logo" />
-        <ul class="navbar-list">
           <li><a href="#Estudio">Estudio</a></li>
           <li><a href="#footer-items">Contactanos</a></li>
         </ul>
@@ -38,13 +62,32 @@
         </div>
       </section>
       <section id="Galeria">
-        <p>GALERIA</p>
+        <h2>GALERIA</h2>
         <div class="Galeria-cards-container">
           <div class="Galeria-Nature">
+            <img
+              src="./Fotos/Natural2.jpg"
+              class="galeria-foto"
+              alt="Foto_Naturaleza"
+            />
             <p>Naturaleza</p>
           </div>
+          <div class="Galeria-Marketing">
+            <img
+              src="./Fotos/Marketing2.jpg"
+              class="galeria-foto"
+              alt="Foto_Marketing"
+            />
+            <p>Eventos & Marketing</p>
+          </div>
           <div class="Galeria-Studio">
-            <p>Nuestro Estudio</p>
+            <img
+              src="./Fotos/Studio2.jpg"
+              class="galeria-studio"
+              alt="Foto_studio"
+            />
+
+            <p>Sesión de Estudio</p>
           </div>
         </div>
       </section>
@@ -57,9 +100,10 @@
           <div class="Estudio-info">
             <h3>Adaptación de shootings a las demandas Actuales</h3>
             <p>
-              "En nuestro novedoso estudio privado creamos fotografia de Alto
-              impacto para celebraciones, productos web y lifestyle, en
-              diferentes formatos y adaptables a tus redes sociales."
+              "Creamos
+              <span>fotografia de Alto impacto</span> para celebraciones,
+              productos web y lifestyle, en diferentes formatos y adaptables a
+              tus redes sociales."
             </p>
             <a href="./Registro/index.html" target="_blank"
               >Quiero una Sesión</a
@@ -73,9 +117,9 @@
         <div class="redes">
           <span>Seguinos en nuestras redes</span>
           <img src="./Fotos/Twitter2.png" class="red-icon" alt="Twitter" />
-          <p>@pointitallStudio</p>
+          <p>Tw: @pointitallStudio</p>
           <img src="./Fotos/instagram.png" class="red-icon" alt="Instagram" />
-          <p>@pointitallStudio</p>
+          <p>IG: @pointitallStudio</p>
         </div>
         <nav class="footer-nav">
           <ul class="footer-links">
