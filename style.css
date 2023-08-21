@@ -418,9 +418,9 @@ footer {
   font-size: 24px;
 }
 
-.footer-links a {
+/* .footer-links a {
   text-decoration: underline var(--background);
-}
+} */
 
 .redes p,
 .redes span,
