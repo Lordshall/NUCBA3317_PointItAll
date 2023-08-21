@@ -120,7 +120,7 @@ main {
   font-size: 40px;
   min-width: 300px;
   color: transparent;
-  background: linear-gradient(to bottom, #7e1b33, #845543);
+  background: linear-gradient(to bottom, var(--text1), #2fab98);
   background-clip: text;
   -webkit-background-clip: text;
 }
@@ -128,7 +128,7 @@ main {
 .item p {
   text-align: end;
   padding: 30px 10px;
-  color: var(--text2);
+  color: var(--text1);
   line-height: 1.2em;
   font-size: 24px;
   min-width: 250px;
@@ -161,8 +161,8 @@ main {
 }
 
 .item:nth-child(1) {
-  background: var(--alternative);
-  font-family: "caveat";
+  background: linear-gradient(to left, rgba(0 0 0 /0.2), rgba(0 0 0 /0.6)),
+    url(./Fotos/Item.jpg) no-repeat center/ cover;
   grid-column: 1 / span 2;
   grid-row: 1 / span 2;
 }
@@ -438,5 +438,4 @@ footer p {
 
 footer span {
   font-weight: 700;
-  text-decoration: ;
 }

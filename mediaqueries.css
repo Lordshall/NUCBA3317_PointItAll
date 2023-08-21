@@ -5,23 +5,35 @@
   .navbar-list {
     position: absolute;
     top: 80px;
-    width: 100%;
+    width: 90%;
     left: 5%;
     right: 5%;
     border: 2px solid var(--text1);
-    border-top: 0;
+    border-top: 5px;
     flex-direction: column;
     background: var(--primary);
-    /* background:  
-    linear-gradient(to top, #be7e5a, var(--background)); */
+    /*background:      linear-gradient(to top, #be7e5a, var(--background));
+    */
     border-radius: 0px 0px 15px 15px;
     -webkit-border-radius: 0px 0px 15px 15px;
     -moz-border-radius: 0px 0px 15px 15px;
     -ms-border-radius: 0px 0px 15px 15px;
     -o-border-radius: 0px 0px 15px 15px;
-    padding: 20px 30px;
+    padding: 20px 20px;
     align-items: start;
-    display: none;
+    /*display: none;
+    */
+    transform: translateX(-200%);
+    transition: all 0.5s ease-in-out;
+    z-index: 2;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -webkit-transform: translate(-200%);
+    -moz-transform: translate(-200%);
+    -ms-transform: translate(-200%);
+    -o-transform: translate(-200%);
   }
 
   .navbar-list a {
@@ -30,6 +42,11 @@
 
   #menu-toggle:checked ~ .navbar-list {
     display: flex;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
   }
 
   /* ********HOME***** */
@@ -47,11 +64,13 @@
   }
 
   .item:nth-child(1) {
-    background: var(--text1);
+    /* background: var(--text1); */
     grid-column: 1 / span 1;
     grid-row: 1 / auto;
     display: flex;
     flex-direction: column;
+    background: linear-gradient(to left, rgba(0 0 0 /0.2), rgba(0 0 0 /0.6)),
+      url(./Fotos/Item.jpg) no-repeat center/ cover;
   }
 
   .item h1,
@@ -183,13 +202,6 @@
     font-weight: 500;
   }
 }
-
-/* .footer-links,
-.footer-links a,
-.footer-links span {
-  font-size: 16px;
-  line-height: 1.6em;
-} */
 
 @media (max-width: 580px) {
   /* ********HOME***** */
