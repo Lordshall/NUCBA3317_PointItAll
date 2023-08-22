@@ -120,7 +120,7 @@ main {
   font-size: 40px;
   min-width: 300px;
   color: transparent;
-  background: linear-gradient(to bottom, var(--text1), #2fab98);
+  background: linear-gradient(to left, #7e1b33, #ded2d1);
   background-clip: text;
   -webkit-background-clip: text;
 }
